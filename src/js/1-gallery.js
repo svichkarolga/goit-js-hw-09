@@ -82,3 +82,13 @@ const markup = images.map(({smallImage, largeImage, ImageDescription}) => {
 </li>`;
 }).join("");
 gallery.insertAdjacentHTML("beforeend", markup); 
+
+const galleryImages = new SimpleLightbox('.gallery', { 
+  captions: true,
+  captionsData: 'alt',
+  captionDelay: 250,
+  captionPosition: 'bottom',
+  overlay: true,
+  animationSlide: true,
+  enableKeyboard: true,
+ });
