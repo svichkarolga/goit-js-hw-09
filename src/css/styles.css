@@ -8,7 +8,6 @@
 @import url('./vite-promo.css');
 @import url('./header.css');
 
-/* @import "simplelightbox/dit/simple-lightbox.min.css"; */
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -30,8 +29,11 @@
    max-width: 1128px;
    margin: 0 auto;
    padding: 24px;
+  background-color: transparent;
+   
  }
 
+ /* 1-gallery */
  .gallery {
    list-style-type: none;
    display: flex;
@@ -56,3 +58,59 @@
    object-fit: cover;
    display: block;
  }
+
+ /* 2-form */
+ .feedback-form{
+  display:flex;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 24px;
+  width: 408px;
+  height: 296px;
+  background: #fff;
+  margin: 0 auto;
+ }
+ label{
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+ }
+.feedback-form-input{
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.feedback-form-message{
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 80px;
+  resize: none;
+  margin-bottom: 16px;
+}
+.feedback-form-submit{
+  border-radius: 8px;
+  width: 95px;
+  height: 40px;
+  background: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 250ms linear;
+}
+.feedback-form-submit:hover,
+.feedback-form-submit:focus {
+  transform: scale(1.05);
+}
