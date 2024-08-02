@@ -62,5 +62,6 @@ const onFeedbackFormSubmit = event => {
 
   event.target.reset(); // чистяться ел-ти форми
   localStorage.removeItem('feedback-form-state'); // чиститься локал сторідж точечно по ключу
+   formData = { email: "", message: "" }; // чиститься обʼект formData
 };
 feedbackFormEl.addEventListener('submit', onFeedbackFormSubmit);
